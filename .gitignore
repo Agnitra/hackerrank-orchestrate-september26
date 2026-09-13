@@ -1,0 +1,69 @@
+# Environment & Secrets
+# Keep .env.example for template, ignore actual .env with secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Dependencies & Build Output
+node_modules/
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Data Files (CSV datasets)
+# Ignore all CSVs except output.csv in repo root (required for submission)
+*.csv
+!output.csv
+
+# Dataset Folders (organizer-provided data, not part of solution)
+dataset/
+data/
+
+# Logs
+# Keep log.txt for chat transcript submission, ignore other logs
+*.log
+!log.txt
+
+# Editor & IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Python Caches
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env.py
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Package Manager Debug Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun-debug.log*
+
+# Submission Artifacts
+code.zip
+*.zip
+*.tar.gz
+*.tgz
+
+# OS / Misc
+*.tmp
+*.temp
+.cache/
